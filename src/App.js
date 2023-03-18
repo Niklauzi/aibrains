@@ -1,13 +1,20 @@
 import React, { Components } from 'react';
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 import Navigation from './Components/Navigation/Navigation';
 import Logo from './Components/Logo/Logo';
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import Rank from './Components/Rank/Rank';
 import './App.css';
+import Particle from './Components/Particles/Particles';
+
+
 
 function App() {
   return (
     <div className="App">
+     <Particle />
       <Navigation />
        <Logo />
        <Rank />
