@@ -9,7 +9,7 @@ import { useCallback } from "react";
 const Particle = () => {
 
         const particlesInit = useCallback(async engine => {
-            console.log(engine);
+            // console.log(engine);
             // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
             // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
             // starting from v2 you can add only the features you need reducing the bundle size
@@ -17,7 +17,7 @@ const Particle = () => {
         }, );
     
         const particlesLoaded = useCallback(async container => {
-            await console.log(container);
+            // await console.log(container);
         }, );
 
     return (
@@ -29,7 +29,6 @@ const Particle = () => {
    options={{
     background: {
         color: {
-            value: "#0d47a1",
         },
     },
     fpsLimit: 120,
@@ -57,10 +56,9 @@ const Particle = () => {
     },
     particles: {
         color: {
-            value: "#ffffff",
         },
         links: {
-            color: "#ffffff",
+           
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -85,10 +83,10 @@ const Particle = () => {
                 enable: true,
                 area: 800,
             },
-            value: 80,
+            value: 50,
         },
         opacity: {
-            value: 0.5,
+            value: 0.005,
         },
         shape: {
             type: "circle",
